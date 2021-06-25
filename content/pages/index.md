@@ -5,10 +5,10 @@ sections:
     type: section_hero
     image: images/hero.png
     image_alt: App preview
-    title: This Is A Big Hero Headline
+    title: Spicyfy catering is here
     content: >-
-      Azimuth is the perfect theme for developers, designers and entrepreneurs
-      who need a sleek, modern SaaS site.
+      Spicyfy is the perfect service for marriges, parties and functions
+      who need a tasty, hygenic food.
     actions:
       - label: Learn More
         url: /features

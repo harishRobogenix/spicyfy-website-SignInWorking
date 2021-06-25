@@ -6,10 +6,10 @@ const Private = () => {
 
   return (
     <div >
-      <div>Private</div>
+      <div>This is a Private Page this will only be visible for registered users</div>
       {
         user?.email &&
-        <div>
+        <div><div><h1>Login Sucessful</h1></div>
           <div>Email: {user.email}</div>
           <button onClick={() => logout()}>Logout</button>
         </div> 
