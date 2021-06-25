@@ -4,6 +4,32 @@ import _ from 'lodash';
 
 import { Link, withPrefix, classNames, getPageUrl } from '../utils';
 import Action from './Action';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import initFirebase from '../../config';
+import { setUserCookie } from '../auth/userCookie';
+import { mapUserData } from '../auth/useUser';
+
+initFirebase();
+const firebaseAuthConfig = ({ signInSuccessUrl }) => ({
+  signInFlow: 'popup',
+  signInOptions: [
+    {
+      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName: false
+    },
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+  ],
+  signInSuccessUrl,
+  credentialHelper: 'none',
+  callbacks: {
+    signInSuccessWithAuthResult: async ({ user }, redirectUrl) => {
+      const userData = await mapUserData(user);
+      setUserCookie(userData);
+    }
+  }
+});
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -45,6 +71,7 @@ export default class Header extends React.Component {
     }
 
     renderNavLinks(navLinks, pageUrl) {
+        const signInSuccessUrl = "/"
         return (
             <React.Fragment>
                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
@@ -69,7 +96,9 @@ export default class Header extends React.Component {
                                     </li>
                                 );
                             })}
+                             
                         </ul>
+                        
                     </div>
                 </nav>
                 <button id="menu-open" className="menu-toggle" ref={this.menuOpenRef} onClick={this.handleMenuOpen.bind(this)}>
