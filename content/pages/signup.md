@@ -1,12 +1,11 @@
 ---
 title: Sign In
 subtitle: >-
-  This is an <a href="/signInPage">Sign In </a>. It can be used to describe what this page is
-  about.
+  Click here to <a href="/signInPage">Sign In </a>. This will lead you to a login page.
 # image: images/11.jpg
 # image_alt: Office desk top view
 seo:
-  title: Sign Up
+  title: Sign In
   description: This is the sign up page
   extra:
     - name: 'og:type'
@@ -27,9 +26,9 @@ seo:
 layout: page
 ---
 
-<div >
+<!-- <div >
       
   <div>
       <a href="/signInPage">Sign In </a>
   </div>
-</div>
+</div> -->
