@@ -1,20 +1,19 @@
 ---
 title: Pancakes
-subtitle: somesubtittle for tittle
+subtitle: some tag line for tittle
 author: content/data/authors/jane-doe.yaml
 excerpt: >-
     A story about customer loyalty curabitur sed consectetur nisi. Integer sit
     amet commodo massa.
-date: '2021-01-03'
+date: '2021-28-06'
 thumb_image: images/pancakes.jpg
-thumb_image_alt: Pancakes
+thumb_image_alt: A group of people working in a cafe
 image: images/pancakes.jpg
-image_alt: Pancakes
+image_alt: A group of people working in a cafe
 seo:
     title: Pancakes
     description: >-
-        A story about customer loyalty curabitur sed consectetur nisi. Integer sit
-        amet commodo massa.
+        some tag line for tittle
     extra:
         - name: 'og:type'
           value: article
@@ -28,7 +27,7 @@ seo:
               sit amet commodo massa.
           keyName: property
         - name: 'og:image'
-          value: images/3.jpg
+          value: images/pancakes.jpg
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'
@@ -40,17 +39,17 @@ seo:
               A story about customer loyalty curabitur sed consectetur nisi. Integer
               sit amet commodo massa.
         - name: 'twitter:image'
-          value: images/3.jpg
+          value: images/pancakes.jpg
           relativeUrl: true
 layout: post
 ---
 
-**Description** Some descriptions
+**Price** 5$
 
-## price
+## Description
 
-50$
+Some description of the food item
 
-## Customer Reviews
+## Reviews
 
-reviews form the customers
+reviews of common public

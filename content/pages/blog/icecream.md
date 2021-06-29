@@ -1,26 +1,25 @@
 ---
-title: Ice Cream
-subtitle: somesubtittle for tittle
+title: Icecream
+subtitle: some tag line for tittle
 author: content/data/authors/jane-doe.yaml
 excerpt: >-
     A story about customer loyalty curabitur sed consectetur nisi. Integer sit
     amet commodo massa.
-date: '2021-01-03'
+date: '2021-28-06'
 thumb_image: images/icecream.jpg
-thumb_image_alt: Ice Cream
+thumb_image_alt: A group of people working in a cafe
 image: images/icecream.jpg
-image_alt: Ice Cream
+image_alt: A group of people working in a cafe
 seo:
-    title: Ice Cream
+    title: Icecream
     description: >-
-        A story about customer loyalty curabitur sed consectetur nisi. Integer sit
-        amet commodo massa.
+        some tag line for tittle
     extra:
         - name: 'og:type'
           value: article
           keyName: property
         - name: 'og:title'
-          value: Ice Cream
+          value: icecream
           keyName: property
         - name: 'og:description'
           value: >-
@@ -28,29 +27,29 @@ seo:
               sit amet commodo massa.
           keyName: property
         - name: 'og:image'
-          value: images/3.jpg
+          value: images/icecream.jpg
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'
           value: summary_large_image
         - name: 'twitter:title'
-          value: Ice Cream
+          value: icecream
         - name: 'twitter:description'
           value: >-
               A story about customer loyalty curabitur sed consectetur nisi. Integer
               sit amet commodo massa.
         - name: 'twitter:image'
-          value: images/3.jpg
+          value: images/icecream.jpg
           relativeUrl: true
 layout: post
 ---
 
-**Description** Some descriptions
+**Price** 5$
 
-## price
+## Description
 
-50$
+Some description of the food item
 
-## Customer Reviews
+## Reviews
 
-reviews form the customers
+reviews of common public
