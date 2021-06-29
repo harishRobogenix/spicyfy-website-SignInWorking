@@ -27,12 +27,12 @@ export default class Blog extends React.Component {
                                 <Link href={postUrl}>{title}</Link>
                             </h2>
                         </header>
-                        {excerpt && (
+                        {/* {excerpt && (
                             <div className="post-excerpt">
                                 <p>{excerpt}</p>
                             </div>
                         )}
-                        <BlogPostFooter post={post} dateType={'short'} data={data} />
+                        <BlogPostFooter post={post} dateType={'short'} data={data} /> */}
                     </div>
                 </div>
             </article>
@@ -49,6 +49,7 @@ export default class Blog extends React.Component {
                 <div className="outer">
                     <div className="inner">
                         <div className="grid post-feed">{_.map(posts, (post, index) => this.renderPost(post, index, data))}</div>
+
                     </div>
                 </div>
             </Layout>
