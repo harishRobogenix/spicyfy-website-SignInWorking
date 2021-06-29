@@ -1,17 +1,17 @@
 ---
-title: Ice Cream
+title: Salad
 subtitle: somesubtittle for tittle
 author: content/data/authors/jane-doe.yaml
 excerpt: >-
     A story about customer loyalty curabitur sed consectetur nisi. Integer sit
     amet commodo massa.
 date: '2021-01-03'
-thumb_image: images/icecream.jpg
-thumb_image_alt: Ice Cream
-image: images/icecream.jpg
-image_alt: Ice Cream
+thumb_image: images/salad.jpg
+thumb_image_alt: Salad
+image: images/salad.jpg
+image_alt: Salad
 seo:
-    title: Ice Cream
+    title: Salad
     description: >-
         A story about customer loyalty curabitur sed consectetur nisi. Integer sit
         amet commodo massa.
@@ -20,7 +20,7 @@ seo:
           value: article
           keyName: property
         - name: 'og:title'
-          value: Ice Cream
+          value: Salad
           keyName: property
         - name: 'og:description'
           value: >-
@@ -34,7 +34,7 @@ seo:
         - name: 'twitter:card'
           value: summary_large_image
         - name: 'twitter:title'
-          value: Ice Cream
+          value: Salad
         - name: 'twitter:description'
           value: >-
               A story about customer loyalty curabitur sed consectetur nisi. Integer
