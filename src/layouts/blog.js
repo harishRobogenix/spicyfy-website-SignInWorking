@@ -4,6 +4,7 @@ import _ from 'lodash';
 import { Layout } from '../components';
 import { Link, getPageUrl, withPrefix } from '../utils';
 import BlogPostFooter from '../components/BlogPostFooter';
+import Taglist from '../components/Taglist';
 
 export default class Blog extends React.Component {
     renderPost(post, index, data) {
@@ -14,7 +15,11 @@ export default class Blog extends React.Component {
         const postUrl = getPageUrl(post, { withPrefix: true });
 
         return (
+            <>
+            
             <article key={index} className="cell post">
+                
+                
                 <div className="card">
                     {thumbImage && (
                         <Link className="post-thumbnail" href={postUrl}>
@@ -35,7 +40,8 @@ export default class Blog extends React.Component {
                         <BlogPostFooter post={post} dateType={'short'} data={data} /> */}
                     </div>
                 </div>
-            </article>
+                </article>
+                </>
         );
     }
 
@@ -45,14 +51,18 @@ export default class Blog extends React.Component {
         const config = _.get(this.props, 'data.config');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
         return (
+            <>
+            
             <Layout page={page} config={config}>
                 <div className="outer">
-                    <div className="inner">
+                        <div className="inner">
+                            <Taglist/>
                         <div className=" grid post-feed">{_.map(posts, (post, index) => this.renderPost(post, index, data))}</div>
 
                     </div>
                 </div>
-            </Layout>
+                </Layout>
+                </>
         );
     }
 }
