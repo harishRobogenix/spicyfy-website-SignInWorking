@@ -53,10 +53,13 @@ export default class Blog extends React.Component {
         return (
             <>
             
-            <Layout page={page} config={config}>
-                <div className="outer">
+                <Layout page={page} config={config}>
+                    
+                    <div className="outer">
+                        
                         <div className="inner">
                             <Taglist/>
+                            
                         <div className=" grid post-feed">{_.map(posts, (post, index) => this.renderPost(post, index, data))}</div>
 
                     </div>

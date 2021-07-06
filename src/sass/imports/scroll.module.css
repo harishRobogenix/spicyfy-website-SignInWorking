@@ -1,0 +1,69 @@
+.menuitem {
+    border: 3px solid #ddd;
+    border-radius: 30px;
+    padding: 5px 30px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    width: auto;
+}
+.menuitemactive {
+    border: 3px solid lightgreen;
+    border-radius: 30px;
+    padding: 5px 30px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    width: auto;
+}
+.imageUrl {
+    padding-right: 20;
+    flex-direction: row;
+}
+
+.scrollmenuarrow {
+    padding: 20px;
+    cursor: pointer;
+}
+.App {
+    width: 100%;
+}
+
+.searchbar {
+    padding: 5px;
+    margin: 5px;
+    width: 800px;
+    display: flex;
+    transform: translateX(50%);
+}
+
+.inputext {
+    background: #fff;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    border: 2px solid black;
+    padding: 0.5em;
+    margin: 5px;
+    width: 580px;
+}
+
+.submit {
+    background-color: #45a049;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #04aa6d;
+}
+.submit:active {
+    transform: scale(0.96);
+}
