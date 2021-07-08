@@ -1,0 +1,106 @@
+.main {
+}
+
+.scrollbar {
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    left: 50%;
+    transform: translateX(-40%);
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 480px;
+    padding-bottom: 70px;
+    margin: 10px 0px;
+    padding-top: 20px;
+    padding: 5px;
+    z-index: 1;
+}
+.image {
+    position: absolute;
+    /* top: 20px;
+    left: 20px;
+    z-index: -1; */
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.card:hover .image {
+    transform: scale(1.05);
+}
+.overlay {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: 0.4s;
+    background: #fff;
+    border-radius: 0px 0px 10px 10px;
+}
+.upperinfo {
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+.upperinfo h3 {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+    margin: 10px;
+}
+.upperinfo h4 {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    margin: 10px;
+}
+.overlay:hover .upperinfo h3 {
+    color: #fff;
+}
+.overlay:hover .upperinfo h4 {
+    color: #fff;
+}
+.overlay:hover {
+    background: #38371295;
+    height: 250px;
+}
+
+.overlay p {
+    color: #fff;
+    margin: 0;
+    padding: 0px 10px 20px;
+    font-size: 14px;
+}
+.overlay a {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}

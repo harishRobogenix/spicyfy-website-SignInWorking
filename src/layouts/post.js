@@ -4,6 +4,36 @@ import _ from 'lodash';
 import { Layout } from '../components/index';
 import { htmlToReact, withPrefix, markdownify } from '../utils';
 import BlogPostFooter from '../components/BlogPostFooter';
+import firebase from '../firebase'
+import initFirebase from '../../config';
+initFirebase();
+
+
+useEffect(() => {
+      
+    const businessesDoc = firebase.firestore().collection('businesses');
+
+    businessesDoc.get().then(querySnapshot => {
+        if (querySnapshot.size > 0) {
+          const businessesData=[]
+          querySnapshot.docs.map(doc => {
+              const d = doc.data()
+              businessesData.push({
+                  name: d.name,
+                  place: d.place,
+                  products: d.products
+              })
+          });
+        
+            setTags(businessesData)
+            console.log(businessesData)
+        }
+    });
+  
+
+    }, [])
+
+
 
 export default class Post extends React.Component {
     render() {

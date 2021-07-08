@@ -16,3 +16,14 @@
     padding: 20px;
     cursor: pointer;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 12px;
+}
+
+.item {
+    min-height: 200px;
+    background-color: #eee;
+}
