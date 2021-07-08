@@ -102,7 +102,7 @@ const ScrollApp = (props) => {
           const tagsData=[]
           querySnapshot.docs.map(doc => {
               const d = doc.data()
-              tagsData.push({ name: d.name , url:d.url })
+              tagsData.push({ name: d.name , url: d.url })
             });
           setTags(tagsData) 
         }
